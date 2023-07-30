@@ -1,0 +1,284 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 1vw;
+    list-style-type: none;
+    width: calc(100%);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+li {
+    display: block;
+    text-align: center;
+    line-height: 1.5;
+}
+
+button {
+    border-radius: 25px;
+    border: 1px solid;
+    font-size: 1vw; 
+    padding: 0.8vh 3vw;
+}
+.logo {
+    height: 1.5vh;
+}
+.subscribe {
+    margin-right: 0.5vw;
+    border: 1px solid rgb(241, 41, 91);
+    background-color: rgb(241, 41, 91);
+    color: white;
+    font-weight: bold;
+}
+.login {
+    border: 1px solid rgb(241, 41, 91);
+    background-color: white;
+    color: rgb(241, 41, 91);
+    font-weight: bold;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6vh;
+    padding: 0 5vh;
+}
+
+.header-placeholder {
+    height: 5vh;
+}
+.hero_section {
+    background-image : url('../hero-photo.png');
+    height: calc(.48 * 100vw);
+    background-size:cover;
+    background-position:center;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_text {
+    width: calc(32%);
+    display:flex;
+    flex-direction: column;
+    color: white;
+    padding-right: 29vw;
+}
+
+.hero_text > h2 {
+    font-size: 3.5vw;
+    margin-bottom: 0;
+}
+.hero_text > p {
+    font-size: 1.5vw;
+}
+
+.hero_text > .subscribe {
+    width: fit-content;
+    border: 1px solid rgb(241, 41, 91);
+    background-color: rgb(241, 41, 91);
+    color: white;
+    font-size: 1.5vw;
+    padding: 1vh 4vw;
+}
+
+.details_section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5vh 17vw;
+   
+}
+
+.details_section > h1, .display > h1 {
+    font-size: 2.5vh;
+    font-weight: bolder;
+    color: rgb(43, 128, 208);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.details_section > p, .display > p {
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    font-size: 1.5vh;
+    font-weight: lighter;
+    color: rgb(110, 110, 110);
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 0vh;
+}
+
+.card > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1.2vh;
+    margin-top: 1vh;
+    padding-top: 0;
+    padding-bottom: 3vh;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    border-radius: 5px;
+    width: 20%;
+    height: auto;
+}
+
+.card > article > h2 {
+    font-size: 2.75vh;
+    color: white;
+    margin-bottom: 0;
+    padding: 0.5vw;
+}
+
+.card > article > p {
+    font-size: 1.5vh;
+    color: white;
+    margin: 0px;
+}
+
+.free {
+    background-color: rgb(81, 183, 251);
+    color: white;
+}
+.plus {
+    background-color: rgb(2, 95, 254);
+    color: white;
+}
+.premium {
+    background-color: rgb(184, 26, 227);
+    color: white;
+}
+.signup {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 0.5vh 3vw;
+    font-size: 1.3vh;
+}
+
+.key_message {
+    background-image : url('../about-photo.png');
+    height: calc(.48 * 100vw);
+    background-size:cover;
+    background-position:center;
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vh 10vw;
+}
+
+.key_message > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.key_message > article > img {
+    height: 7vh;
+    padding: 3vh 0;
+}
+.key_message > article > h3 {
+    color: white;
+    font-size: 2vh;
+    font-weight: light;
+    margin-bottom: 0;
+}
+.key_message > article > p {
+    color: white;
+    font-size: 1.2vh;
+    line-height: 2;
+    padding: 0 4vw;
+}
+
+.display {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 4vh 15vw;
+}
+
+.album_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 0;
+}
+
+.album_list > article {
+    flex: 1 0 30%; 
+}
+
+.image {
+    height: 20vw;
+    padding: 1vw;
+    display: block;
+    margin: auto;
+}
+
+
+footer {
+    background-color: rgb(43, 128, 208);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3vh;
+    padding: 1vh 5vw;
+}
+
+.social_contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social_contacts img {
+    height: 2.5vh;
+    padding: 0.5vw;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    .album_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
